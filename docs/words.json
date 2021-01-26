@@ -1,0 +1,19 @@
+{
+    "set_1" : [
+        {"phrase" : "i like monkeys", "id" : "i_like_monkeys_phrase"},
+        {"phrase" : "i like monti", "id" : "i_like_monti_phrase"},
+        {"phrase" : "i like moo", "id" : "i_like_moo_phrase"},
+        {"phrase" : "i like momento mori", "id" : "i_like_momento_mori_phrase"}
+    ],
+
+    "set_2" : [
+        {"phrase" : "he like monkeys", "id" : "he_like_monkeys_phrase"},
+        {"phrase" : "he like monti", "id" : "he_like_monti_phrase"},
+        {"phrase" : "he like moo", "id" : "he_like_moo_phrase"},
+        {"phrase" : "he like momento mori", "id" : "he_like_momento_mori_phrase"}       
+    ],
+
+    "set_3" : [
+        {"phrase" : "chikashshanompa ithanali", "id" : 1}
+    ]
+}
