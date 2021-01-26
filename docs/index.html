@@ -33,7 +33,7 @@
         </div>
       </form>
       <button id="record" type="button" class="btn btn-dark">Record</button>
-      <button id="submit" type="button" class="btn btn-success">Submit Recording</button>
+      <button id="submit" type="button" class="btn btn-success" disabled="true">Submit Recording</button>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -53,8 +53,17 @@
       $("#record").click(function(){     //anonymous function, i.e. a function without a name
         console.log("record :" + counter);
         counter ++;
+        $("#submit").prop('disabled', false);
       });
 
+      var submit_counter = 0;
+      $("#submit").click(function(){
+        console.log("submit " + submit_counter);
+        .prop('disabled', true);
+        submit_counter ++;
+
+        $("#submit").prop("disabled", true);
+      })
       
     </script>
   </body>
