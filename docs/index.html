@@ -61,9 +61,10 @@
       });
 
       var submit_counter = 0;
+      var emailInput = document.getElementById("email");
       $("#submit").click(function(){
         console.log("submit " + submit_counter);
-        console.log("email address: " + email)
+        console.log("email address: " + emailInput.value)
         submit_counter ++;
 
         //console.log email value
