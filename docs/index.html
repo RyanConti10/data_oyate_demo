@@ -37,6 +37,21 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
+        <div class="wrapper">
+          <header>
+            <h1>Web dictaphone</h1>
+          </header>
+          <section class="main-controls">
+            <canvas class="visualizer" height="60px"></canvas>
+            <div id="buttons">
+              <button class="record">Record</button>
+              <button class="stop">Stop</button>
+            </div>
+          </section>
+          <section class="sound-clips">
+          </section>
+    
+        </div>
       </form>
       <button id="record" type="button" class="btn btn-dark">Record</button>
       <button id="submit" type="button" class="btn btn-success" disabled="true">Submit Recording</button>
@@ -69,7 +84,9 @@
         var input = {};
         console.log("submit " + submit_counter);
         console.log("email address: " + emailInput.value())
-        input.email = emailInput.value; // makes {"email" : "value"} 
+        input.email = emailInput.value; // makes {"email" : "value"}
+        //input.age = $("#age").val();
+        //console.log(input);  
         submit_counter ++;
 
         //console.log email value
