@@ -68,7 +68,7 @@
       $("#submit").click(function(){
         var input = {};
         console.log("submit " + submit_counter);
-        console.log("email address: " + emailInput.value)
+        console.log("email address: " + emailInput.value())
         input.email = emailInput.value; // makes {"email" : "value"} 
         submit_counter ++;
 
