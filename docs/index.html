@@ -40,10 +40,6 @@
           <input type="gender" class="form-control" id="exampleInputGender1">
           <div id="gednerHelp" class="form-text">What is your gender identity?</div>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
         <div class="wrapper">
           <header>
             <h1>Web dictaphone</h1>
@@ -81,7 +77,11 @@
       $("#record").click(function(){     //anonymous function, i.e. a function without a name
         console.log("record :" + counter);
         counter ++;
-        $("#submit").prop('disabled', false);
+        $("#submit").prop('disabled', true);
+      });
+
+      $("#stop").click(function(){
+          $("submit").prop("disabled", false);
       });
 
       var submit_counter = 0;
@@ -89,9 +89,11 @@
       var submit_button = $("#submit");
       $("#submit").click(function(){
         var input = {};
+        var d = new Date();
         console.log("submit " + submit_counter);
         console.log("email address: " + emailInput.val)
         input.email = emailInput.value; // makes {"email" : "value"}
+        input.timestamp = d.toUTCString();
         //input.age = $("#age").val();
         //console.log(input);  
         submit_counter ++;
