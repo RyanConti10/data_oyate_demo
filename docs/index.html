@@ -38,7 +38,7 @@
         <div class="mb-3">
           <label for="exampleInputGender1" class="form-label">Gender:</label>
           <input type="gender" class="form-control" id="exampleInputGender1">
-          <div id="gednerHelp" class="form-text">What is your gender identity?</div>
+          <div id="genderHelp" class="form-text">What is your gender identity?</div>
         </div>
         <div class="wrapper">
           <header>
@@ -46,18 +46,18 @@
           </header>
           <section class="main-controls">
             <canvas class="visualizer" height="60px"></canvas>
-            <div id="buttons">
-              <button class="record">Record</button>
-              <button class="stop">Stop</button>
-            </div>
           </section>
           <section class="sound-clips">
           </section>
     
         </div>
       </form>
-      <button id="record" type="button" class="btn btn-dark">Record</button>
-      <button id="submit" type="button" class="btn btn-success" disabled="true">Submit Recording</button>
+      <div id="buttons">
+        <!-- <button class="record">Record</button> -->
+        <!-- <button class="stop">Stop</button> -->
+        <button id="record" type="button" class="record btn btn-dark">Record</button>
+        <button id="submit" type="button" class="btn btn-success" disabled="true">Submit Recording</button>
+      </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -94,6 +94,7 @@
         console.log("email address: " + emailInput.val)
         input.email = emailInput.value; // makes {"email" : "value"}
         input.timestamp = d.toUTCString();
+        input.phraseID = "Lorem ipsum"
         //input.age = $("#age").val();
         //console.log(input);  
         submit_counter ++;
